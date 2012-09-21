@@ -14,4 +14,4 @@
 
 LOCAL_STEM := toroplus/device-partial.mk
 
-$(call inherit-product-if-exists, vendor/samsung/$(LOCAL_STEM))
+$(call inherit-product, vendor/samsung/toroplus/device-vendor-blobs.mk)
