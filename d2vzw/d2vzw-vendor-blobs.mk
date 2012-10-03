@@ -33,26 +33,26 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/etc/thermald.conf_F:system/etc/thermald.conf_F \
         vendor/samsung/d2vzw/proprietary/etc/thermald.conf_N:system/etc/thermald.conf_N \
         vendor/samsung/d2vzw/proprietary/etc/thermald.conf_S:system/etc/thermald.conf_S \
+        vendor/samsung/d2vzw/proprietary/etc/init.qcom.post_fs.sh:system/etc/init.qcom.post_fs.sh \
         vendor/samsung/d2vzw/proprietary/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf \
+        vendor/samsung/d2vzw/proprietary/etc/permissions/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
+	vendor/samsung/d2vzw/proprietary/etc/permissions/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
+	vendor/samsung/d2vzw/proprietary/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334.hcd:system/bin/bcm4334.hcd \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334_murata.hcd:system/bin/bcm4334_murata.hcd \
         vendor/samsung/d2vzw/proprietary/bin/bcm4334_semco.hcd:system/bin/bcm4334_semco.hcd \
-        vendor/samsung/d2vzw/proprietary/lib/hw/alsa.msm8960.so:system/lib/hw/alsa.msm8960.so \
-        vendor/samsung/d2vzw/proprietary/lib/hw/audio_policy.msm8960.so:system/lib/hw/audio_policy.msm8960.so \
-        vendor/samsung/d2vzw/proprietary/lib/hw/audio.primary.msm8960.so:system/lib/hw/audio.primary.msm8960.so \
         vendor/samsung/d2vzw/proprietary/lib/libacdbloader.so:system/lib/libacdbloader.so \
-        vendor/samsung/d2vzw/proprietary/lib/libalsa-intf.so:system/lib/libalsa-intf.so \
         vendor/samsung/d2vzw/proprietary/lib/libaudcal.so:system/lib/libaudcal.so \
         vendor/samsung/d2vzw/proprietary/lib/libaudioalsa.so:system/lib/libaudioalsa.so \
-        vendor/samsung/d2vzw/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-        vendor/samsung/d2vzw/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
-        vendor/samsung/d2vzw/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-        vendor/samsung/d2vzw/proprietary/lib/lib_SamsungRec_V01005.so:system/lib/lib_SamsungRec_V01005.so \
-        vendor/samsung/d2vzw/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
         vendor/samsung/d2vzw/proprietary/lib/libmm-color-convertor.so:system/lib/libmm-color-convertor.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/d2vzw/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
+        vendor/samsung/d2vzw/proprietary/lib/libwvdrm_L1.so:system/lib/libwvdrm_L1.so \
+        vendor/samsung/d2vzw/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+        vendor/samsung/d2vzw/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+        vendor/samsung/d2vzw/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
+        vendor/samsung/d2vzw/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
         vendor/samsung/d2vzw/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
         vendor/samsung/d2vzw/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
         vendor/samsung/d2vzw/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
@@ -176,22 +176,9 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
         vendor/samsung/d2vzw/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
 
-# Blobs necessary for drm
-PRODUCT_COPY_FILES +=  \
-    vendor/samsung/d2vzw/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
-    vendor/samsung/d2vzw/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-    vendor/samsung/d2vzw/proprietary/lib/libwvdrm_L1.so:system/lib/libwvdrm_L1.so \
-    vendor/samsung/d2vzw/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-    vendor/samsung/d2vzw/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
-    vendor/samsung/d2vzw/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=true
-
 # Proprietary VZW blobs for LTE
 
 PRODUCT_PACKAGES += \
-	VZWAPNLib \
-	vzwapnpermission \
-	VZWAPNService
-	
+    VZWAPNLib \
+    vzwapnpermission \
+    VZWAPNService
