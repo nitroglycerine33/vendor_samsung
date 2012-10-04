@@ -27,7 +27,26 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/fascinatemtd/proprietary/pppd_runner:system/bin/pppd_runner \
     vendor/samsung/fascinatemtd/proprietary/gpsd:system/vendor/bin/gpsd \
     vendor/samsung/fascinatemtd/proprietary/gps.conf:system/etc/gps.conf \
+    vendor/samsung/fascinatemtd/proprietary/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    vendor/samsung/fascinatemtd/proprietary/etc/init.local.rc:system/etc/init.local.rc \
     vendor/samsung/fascinatemtd/proprietary/gps.aries.so:system/lib/hw/gps.aries.so \
     vendor/samsung/fascinatemtd/proprietary/libsensor_yamaha_test.so:system/vendor/lib/libsensor_yamaha_test.so \
     vendor/samsung/fascinatemtd/proprietary/geomagneticd:system/vendor/bin/geomagneticd \
-    vendor/samsung/fascinatemtd/proprietary/orientationd:system/vendor/bin/orientationd
+    vendor/samsung/fascinatemtd/proprietary/orientationd:system/vendor/bin/orientationd \
+    vendor/samsung/fascinatemtd/proprietary/bin/compcache:system/bin/compcache \
+    vendor/samsung/fascinatemtd/proprietary/bin/e2fsck:system/bin/e2fsck \
+    vendor/samsung/fascinatemtd/proprietary/bin/handle_compcache:system/bin/handle_compcache \
+    vendor/samsung/fascinatemtd/proprietary/bin/mke2fs:system/bin/mke2fs \
+    vendor/samsung/fascinatemtd/proprietary/bin/tune2fs:system/bin/tune2fs \
+    vendor/samsung/fascinatemtd/proprietary/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/samsung/fascinatemtd/proprietary/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/samsung/fascinatemtd/proprietary/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/samsung/fascinatemtd/proprietary/lib/libext2_blkid.so:system/lib/libext2_blkid.so \
+    vendor/samsung/fascinatemtd/proprietary/lib/libext2_com_err.so:system/lib/libext2_com_err.so \
+    vendor/samsung/fascinatemtd/proprietary/lib/libext2_e2p.so:system/lib/libext2_e2p.so \
+    vendor/samsung/fascinatemtd/proprietary/lib/libext2fs.so:system/lib/libext2fs.so \
+    vendor/samsung/fascinatemtd/proprietary/lib/libext2_profile.so:system/lib/libext2_profile.so \
+    vendor/samsung/fascinatemtd/proprietary/lib/libext2_uuid.so:system/lib/libext2_uuid.so \
+    vendor/samsung/fascinatemtd/proprietary/lib/liblzo.so:system/lib/liblzo.so \
+    vendor/samsung/fascinatemtd/proprietary/lib/libncurses.so:system/lib/libncurses.so \
+    vendor/samsung/fascinatemtd/proprietary/lib/libpng.so:system/lib/libpng.so \
