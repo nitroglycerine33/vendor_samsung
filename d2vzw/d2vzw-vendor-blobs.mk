@@ -48,11 +48,6 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
         vendor/samsung/d2vzw/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
         vendor/samsung/d2vzw/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so \
-        vendor/samsung/d2vzw/proprietary/lib/libwvdrm_L1.so:system/lib/libwvdrm_L1.so \
-        vendor/samsung/d2vzw/proprietary/lib/libwvm.so:system/lib/libwvm.so \
-        vendor/samsung/d2vzw/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
-        vendor/samsung/d2vzw/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
-        vendor/samsung/d2vzw/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
         vendor/samsung/d2vzw/proprietary/lib/egl/eglsubAndroid.so:system/lib/egl/eglsubAndroid.so \
         vendor/samsung/d2vzw/proprietary/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so \
         vendor/samsung/d2vzw/proprietary/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so \
@@ -176,9 +171,22 @@ PRODUCT_COPY_FILES += \
         vendor/samsung/d2vzw/proprietary/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
         vendor/samsung/d2vzw/proprietary/lib/libqc-opt.so:system/lib/libqc-opt.so
 
+# Blobs necessary for drm
+PRODUCT_COPY_FILES +=  \
+    vendor/samsung/d2vzw/proprietary/lib/libfrsdk.so:system/lib/libfrsdk.so \
+    vendor/samsung/d2vzw/proprietary/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
+    vendor/samsung/d2vzw/proprietary/lib/libwvdrm_L1.so:system/lib/libwvdrm_L1.so \
+    vendor/samsung/d2vzw/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+    vendor/samsung/d2vzw/proprietary/lib/libWVStreamControlAPI_L1.so:system/lib/libWVStreamControlAPI_L1.so \
+    vendor/samsung/d2vzw/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
+
 # Proprietary VZW blobs for LTE
 
 PRODUCT_PACKAGES += \
-    VZWAPNLib \
-    vzwapnpermission \
-    VZWAPNService
+	VZWAPNLib \
+	vzwapnpermission \
+	VZWAPNService
+	
