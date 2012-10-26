@@ -64,6 +64,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/toroplus/proprietary/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/samsung/toroplus/proprietary/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/samsung/toroplus/proprietary/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/samsung/toroplus/proprietary/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/samsung/toroplus/proprietary/PFFprec_600.emd:system/media/PFFprec_600.emd \
     vendor/samsung/toroplus/proprietary/com.google.android.nfc_extras.xml:system/etc/permissions/com.google.android.nfc_extras.xml \
     vendor/samsung/toroplus/proprietary/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml \
     vendor/samsung/toroplus/proprietary/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
